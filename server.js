@@ -11,10 +11,11 @@ const SECRET = 'tfs_serwis_tajny_klucz_2024'; // IDENTYCZNY jak w programie
 
 // Konfiguracja maila - wpisz swoje dane Gmail
 const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    host: 'smtp-relay.brevo.com',
+    port: 587,
     auth: {
         user: 'dawidek.zkw@gmail.com',
-        pass: 'TWOJE_HASLO_APLIKACJI' // hasło aplikacji z Google, nie zwykłe hasło
+        pass: 'xsmtpsib-77898bbd94381205293534c2060833596b5ac81fea8016743dfd7eefd8f8cf97-OhIDhJQ2FpJOLatR'
     }
 });
 
