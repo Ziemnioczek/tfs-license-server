@@ -13,7 +13,7 @@ const SECRET = 'tfs_serwis_tajny_klucz_2024'; // IDENTYCZNY jak w programie
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'TWOJ_GMAIL@gmail.com',
+        user: 'dawidek.zkw@gmail.com',
         pass: 'TWOJE_HASLO_APLIKACJI' // hasło aplikacji z Google, nie zwykłe hasło
     }
 });
@@ -51,7 +51,7 @@ app.post('/request-license', async (req, res) => {
 
         // Wyślij klucz do klienta
         await transporter.sendMail({
-            from: 'TWOJ_GMAIL@gmail.com',
+            from: 'dawidek.zkw@gmail.com',
             to: klient_email,
             subject: 'Twój klucz licencyjny TFS Serwis',
             text: `
@@ -70,8 +70,8 @@ TFS Serwis
 
         // Wyślij powiadomienie do Ciebie
         await transporter.sendMail({
-            from: 'TWOJ_GMAIL@gmail.com',
-            to: 'TWOJ_GMAIL@gmail.com',
+            from: 'dawidek.zkw@gmail.com',
+            to: 'dawidek.zkw@gmail.com',
             subject: `Nowa licencja wydana - ${klient_email}`,
             text: `
 Wydano nową licencję:
