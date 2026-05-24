@@ -12,10 +12,10 @@ const SECRET = 'tfs_serwis_tajny_klucz_2024'; // IDENTYCZNY jak w programie
 // Konfiguracja maila - wpisz swoje dane Gmail
 const transporter = nodemailer.createTransport({
     host: 'smtp-relay.brevo.com',
-    port: 465,
+    port: 2525,
     auth: {
-        user: 'dawidek.zkw@gmail.com',
-        pass: 'xsmtpsib-77898bbd94381205293534c2060833596b5ac81fea8016743dfd7eefd8f8cf97-OhIDhJQ2FpJOLatR'
+        user: process.env.BREVO_USER,
+        pass: process.env.BREVO_KEY
     }
 });
 
