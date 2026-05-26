@@ -52,7 +52,7 @@ app.post('/request-license', async (req, res) => {
 
         // Wyślij klucz do klienta
         await transporter.sendMail({
-            from: 'ac686e001@smtp-brevo.com',
+            from: 'dawidek.zkw@gmail.com',
             to: klient_email,
             subject: 'Twój klucz licencyjny TFS Serwis',
             text: `
@@ -71,7 +71,7 @@ TFS Serwis
 
         // Wyślij powiadomienie do Ciebie
         await transporter.sendMail({
-            from: 'ac686e001@smtp-brevo.com',
+            from: 'dawidek.zkw@gmail.com',
             to: 'dawidek.zkw@gmail.com',
             subject: `Nowa licencja wydana - ${klient_email}`,
             text: `
