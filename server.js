@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 const SECRET = 'tfs_serwis_tajny_klucz_2024'; // IDENTYCZNY jak w programie
-const TWOJ_EMAIL = 'dawidek.zkw@gmail.com';
+const TWOJ_EMAIL = 'gurek00@gmail.com';
 const ADRES_SERWERA = 'https://tfs-license.onrender.com'; // podmien jesli adres sie zmieni
 
 // Konfiguracja maila - Brevo SMTP
